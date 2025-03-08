@@ -1,0 +1,59 @@
+body {
+    background: url("assets/background.png") no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+/* ปุ่ม Back */
+.back-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+.back-button img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+.video-container {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    margin: auto;
+    background: black;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 60px; /* ขยับลงให้เว้นที่ปุ่ม Back */
+}
+
+video {
+    width: 100%;
+    display: block;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+input[type="range"] {
+    flex-grow: 1;
+    margin: 0 10px;
+}
